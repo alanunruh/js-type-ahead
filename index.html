@@ -21,7 +21,7 @@ const cities = [];
 
 fetch(endpoint)
   .then(dump => dump.json())
-  .then(data => console.log(data));
+  .then(data => cities.push(...data))
 
 </script>
   </body>
